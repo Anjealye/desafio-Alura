@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi encriptador de texto | Anjealye</title>
+    <link href="./resect.css" rel="stylesheet">
+    <link href="./style.css" rel="stylesheet">
+    <link href="./img.css" rel="stylesheet">
+</head>
+
+<body>
+    <header> 
+        <img class="logo" src="./Imagenes/Logo.png" alt="Logo de alura con la inicial de letra a" >
+    </header>
+    <main>
+        <section>
+            <textarea autofocus class="textarea" cols="30" rows="20" placeholder="Ingrese el texto aqui" ></textarea>
+            <div class="buttons">
+                <button class="encriptar" onclick="btnEncriptar()" submit>Encriptar</button>
+                <button class="desencriptar" onclick="btnDesencriptar()">Desencriptar</button>       
+            </div> 
+        </section>
+            
+        <section class="rectangulo">
+            <textarea class="mensaje" cols="18"  rows="8" placeholder="Ingresa el texto que desees encriptar o desencriptar." ></textarea>      
+        </section>
+    
+        <div class="contenedor">
+            <img class="alerta" src="./Imagenes/Vector.png">Solo letras minúsculas y sin acentos 
+            <button class="copiar" onclick="btncopiar()">Copiar</button>
+        </div>    
+    </main>
+
+    <script src="./script.js"></script>
+
+</body>
+
+<footer class="footer">
+    <p class="copyright">&copy Copyright Alura | Desarrollador: Anjealye Ashlin Ochoa Saba</p>
+</footer>
+</html>

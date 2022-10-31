@@ -1,0 +1,30 @@
+.logo {
+    position: absolute;
+    left: 25px ;
+    right: 37.43%;
+    height: 48px;
+    top: 40px;;
+    bottom: 0%;
+}
+
+.alerta{
+    opacity: 0.8;
+    color: #495057;
+    display: flex;
+
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+    font-family: "Inter";
+    
+    font-style: normal;
+    left: 170px;
+    right: 800px;
+    top: 700px;
+    bottom: 0%;
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}

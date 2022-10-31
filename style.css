@@ -1,0 +1,142 @@
+body{
+    background-color: #E5E5E5;
+    width: 540px;
+    height: 149px;
+}
+
+.textarea{
+    position: absolute;
+    margin-top: 10px;
+
+    width: 577px;
+    height: 280px;
+    left: 150px;
+    resize: none;
+    top: 100px;
+    
+    line-height: 150%;
+    color: #0A3871;
+
+}
+
+.mensaje{
+    /*position: static */
+    position: relative;
+    background-image: url(./Imagenes/Muñeco.png);
+    opacity: 0.8;
+    background-repeat: no-repeat;
+    background-position: 15px;
+    background-size: 300px;
+    
+    width: 340px;
+    height: 320px;
+    top: 50px;
+    left: 4px;
+    resize: none;
+}
+
+.buttons{
+    text-align: center;
+    grid-template-columns: auto auto;
+    gap: 2rem;
+    position: absolute;
+    align-items: center;
+    width: 550px;
+    
+    height: 960px;
+    left: 170px;
+    top: 20px;
+    display: flex;
+    /*align-items: flex-end*/
+}
+.contenedor{
+    padding-left: 170px;
+    display: flex;
+    flex-direction:row-reverse;
+    position:absolute;
+    margin-top: 445px;
+    
+}
+.encriptar{
+    width: 328px;
+    height: 67px;
+    background: #0A3871;
+    border-radius: 24px;
+
+    color: white;
+
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 8px;
+}
+.desencriptar{
+    width: 328px;
+    height: 67px;
+    background: #D8DFE8;
+    border-radius: 24px;
+    color: #0A3871;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 8px;
+    border: 1px solid #0A3871;
+}
+
+.copiar{
+    position: absolute;
+    width: 100px;
+    height: 55px;
+    left: 1030px;
+    top: 22px;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 20px;
+    gap: 8px;
+    border: 1px solid palevioletred;
+    border-radius: 20px;
+    background-color: rgb(240, 142, 158);
+    color: rgb(243, 239, 239);
+
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.footer{
+    bottom: 0;
+    position: absolute;
+    padding: 0rem;
+    width: 100%;
+    align-items: center;
+    height: 30px;
+}
+.copyright{
+    color:#eb3c85;
+    text-align: center;
+}
+
+.rectangulo{
+    width: 350px;
+    height: 490px;
+    top: 60px;
+    left: 900px;
+    border-radius: 32px;
+    background: pink;
+    position:absolute;
+}
+
+/* Responsive*/
+@media (max-width:768px){
+    main{
+        flex-direction: column;
+    }
+    .mensaje{
+        margin-left: 0;
+    }
+    .btncopiar{
+        display: block;
+    }
+    .botones{
+        justify-content: flex-start;
+    }
+}
